@@ -22,29 +22,4 @@ Java.perform(function x(){
        
     }});
 
-    // var classLoaderToUse = Java.enumerateClassLoadersSync()[1]; //Get another classloader
-    // Java.classFactory.loader = classLoaderToUse; //Set the classloader to the correct one
-    // var res = classLoaderToUse.findClass('<class name>'); //Just some simple test to make sure that the class can be loaded
-    // console.log(res);
-
-
-    // Java.use('java.lang.reflect.Method').invoke.overload('java.lang.Object', '[Ljava.lang.Object;', 'boolean').implementation = function(a,b,c) {
-    //     console.log('hooked!', a, b, c);
-    //     return this.invoke(a,b,c);
-    // };
-
-
-
-    // Java.perform(function y(){ 
-    //     console.log("Inside java perform function");
-    //     var my_class = Java.use("com.asisctf.config.SayHelloToYourLittleFriend.config");
-    //     // my_class.config.implementation = function(x){
-    //     // console.log( "original call"+x);
-    //     // }
-    
-    //         console.log( "original call"+my_class);
-
-    // });
-
-    // var dex = Java.use("java.lang.reflect.Method");
-    // dex.invoke.overload("java.lang.Object",'[Ljava.lang.Object;').implementation = function(x,y){
+   
