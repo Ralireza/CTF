@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.asisctf.Andex" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.asisctf.Andex.UpdateProfileActivity"/>
+        <activity android:name="com.asisctf.Andex.ShopOrderActivity"/>
+        <activity android:name="com.asisctf.Andex.ProfileActivity"/>
+        <activity android:name="com.asisctf.Andex.MenuActivity"/>
+        <activity android:name="com.asisctf.Andex.ShopItemActivity"/>
+        <activity android:name="com.asisctf.Andex.ConfigurationActivity"/>
+        <activity android:name="com.asisctf.Andex.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.asisctf.Andex.com.squareup.picasso"/>
+    </application>
+</manifest>
